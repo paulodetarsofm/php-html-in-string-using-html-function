@@ -1,0 +1,35 @@
+{
+  "name": "php-html-in-string-using-html-function",
+  "displayName": "Highlighting HTML within PHP strings using the `html()` custom function",
+  "description": "Adds support for highlighting HTML within PHP strings using the `html()` custom function in VSCode",
+  "author": {
+    "name": "paulodetarsofm",
+    "url": "https://github.com/paulodetarsofm"
+  },
+  "repository": {
+    "url": "https://github.com/paulodetarsofm/php-html-in-string-using-html-function.git",
+    "type": "git"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "injectTo": [
+          "source.php",
+          "text.html"
+        ],
+        "scopeName": "php-html-in-string-using-html-function.injection",
+        "path": "./syntaxes/php.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.html": "html"
+        }
+      }
+    ]
+  }
+}
